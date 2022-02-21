@@ -34,7 +34,7 @@ APACHE_DOCUMENT_ROOT=/code/public
 Lo siguiente será en el fichero **docker-compose.yml** modificar el nombre del contenedor.
 
 ```bash
-container_name: apinba
+    container_name: apinba
 ```
 
 <p align="center">
@@ -56,7 +56,7 @@ Esperaremos a que termine de montarse y procederemos a entrar en el contenedor.
 ```    
 Ahora que ya hemos entrado como root podemos proceder a la instalación de symfony. Para proceder con la instalación ejecutaremos el siguiente comando desde el root.
 
-```bash
+```javascript
     symfony new api-nba --version=4.4 --full --no-git
 ```
 Una vez se haya instalado symfony deberemos proceder a copiar y despues borrar los siguiente ficheros.
@@ -133,13 +133,15 @@ Ahora ya podremos comenzar a configurar los propios archivos dentro del contened
 
 Iniciaremos el *IDE* llamado **PhpStorm** y modificaremos el fichero **.env**. 
 Pondremos lo siguiente:
-```bash
+```javascript
 	DB_USER=root
 	DB_PASSWORD=dbrootpass
 	DB_HOST=add-dbms
 	DB_NAME=nba
     DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"
 ```
+Deberá de quedarnos algo similar a esto:
+
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/6.png?raw=true">
 </p>
@@ -150,7 +152,7 @@ Dentro de este archivo deberemos de añadir unas lineas de código que nos permi
 
 Justo antes de: *DROP TABLE IF EXISTS `equipos`*
 
-```bash
+```javascript
     CREATE SCHEMA if not exists nba;
 	USE nba;
 ```
@@ -160,6 +162,38 @@ Quedará de la siguiene forma:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/7.png?raw=true">
 </p>
+
+Una vez este todo listo nos dispondremos a entrar en mySQL desde el root.
+Para esto entraremos una vez mas en el contenedor de la api. Recordar
+
+```bash
+    docker-compose exec web bash
+```
+Y una vez dentro ejecutaremos el siguiente comando:
+```bash
+    mysql -u root -pdbrootpass -h add-dbms < files/nba_2022-02-02.sql
+```
+Con esto entraremos dentro del mySQL y gracias a la configuración anterior en el archivo **sql** las tablas se cargarán de manera automática.
+
+Una vez dentro podremos utilizar la base de datos con: **use nba;*
+
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/8.png?raw=true">
+</p>
+
+Desde mySQL podremos ver las tablas creadas, hacer uso de sentencias query y todo lo relacionado con mySQL. Nosotros no haremos nada de esto, simplemente saldremos.
+
+Para salir de este modo solo deberemos escribir "**exit;**"
+
+IMPORTANTE: 
+Para volver a entrar en mySQL deberemos de ejecutar lo siguiente:
+
+```bash
+    mysql -u root -pdbrootpass -h add-dbms
+```
+No añadiremos las filas que hacen referencia al **sql**; ya que de hacerlo podría machacar toda la información ya creada.
+Trataremos de evitar este posible final.
 ## Authors
 
 - Martin Gregorio Abad ( arxiensig@gmail.com)
