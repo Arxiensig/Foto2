@@ -20,10 +20,7 @@ Haremos clic derecho al directorio llamado: "**sf-app-provisioning**" y lo copia
 </p>
 
 Una vez copiado, renombraremos dicho directorio y le llamaremos "**api-nba**"
-
-
-
-## Configuracion IDE ( Visual Studio Code)
+## Configuracion IDE (Visual Studio Code)
 
 El siguiente paso seria abrir el directorio creado con anterioridad con nombre "*api-nba*" con Visual Studio.
 
@@ -40,6 +37,9 @@ Lo siguiente será en el fichero **docker-compose.yml** modificar el nombre del 
 container_name: apinba
 ```
 
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/2.png?raw=true">
+</p>
 ## Instalación paso a paso
 
 Ahora que ya hemos realizado las configuraciones previas podemos proceder a la instalación
@@ -59,35 +59,29 @@ Ahora que ya hemos entrado como root podemos proceder a la instalación de symfo
 ```bash
     symfony new api-nba --version=4.4 --full --no-git
 ```
-Una vez se haya instalado symfony estaremos listos para proceder con la continuación de la instalación.
+Una vez se haya instalado symfony deberemos proceder a copiar y despues borrar los siguiente ficheros.
+Deberemos copiar todos los archivos(menos los dos docker-compose que hay en la carpeta) un directorio atrás. Para ello ejecutaremos:
 
-## API Reference
-
-#### Get all items
-
-```http
-  GET /api/items
+```bash 
+	cd api.nba/
+	cp .env ../
 ```
+Volveremos una carpeta atras y borraremos el directorio api-nba:
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
+```bash
+    rm -r api.nba/
 ```
+Ahora deberemos configurar tu dispositivo para poder conectarnos a la API.
+## Configuración: apinba.local (hosts)
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+Deberemos dirigirnos al archivo *hosts* dentro del directorio que tendrás en System32 ( Windows).
+La ruta por defecto sería: **C:\Windows\System32\drivers\etc\hosts**
 
-#### add(num1, num2)
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/3.png?raw=true">
+</p>
 
-Takes two numbers and returns the sum.
-
-
+Deberemos añadir el nombre que hemos configurado en el apartado de "*env.webapp*"
 ## Authors
 
 - Martin Gregorio Abad ( arxiensig@gmail.com)
