@@ -382,10 +382,35 @@ ENDPOINT b-> /equipos/{equipo}
 </p>
 
 ENDPOINT c->
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/22.png?raw=true">
+</p>
+
 ENDPOINT d->
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/23.png?raw=true">
+</p>
+
 ENDPOINT e->
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/30.png?raw=true">
+</p>
+
 ENDPOINT f->
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/31.png?raw=true">
+</p>
+
 ENDPOINT g->
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/32.png?raw=true">
+</p>
+
 ENDPOINT h->
 ENDPOINT i->
 ENDPOINT j->
