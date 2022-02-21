@@ -281,11 +281,11 @@ Y finalmente en cada una de sus Entity:
 
 ```bash
     /**
- 		* Equipos
- 		*
- 		* @ORM\Table(name="equipos")
- 		* @ORM\Entity(repositoryClass="App\Repository\EquiposRepository")
- 		*/
+ 	* Equipos
+	*
+	* @ORM\Table(name="equipos")
+	* @ORM\Entity(repositoryClass="App\Repository\EquiposRepository")
+	*/
 ```
 
 
