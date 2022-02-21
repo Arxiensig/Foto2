@@ -400,11 +400,21 @@ Controlador:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/22.png?raw=true">
 </p>
 
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a3.png?raw=true">
+</p>
+
 ENDPOINT d-> /equipo/jugadores/{nombre}
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/23.png?raw=true">
+</p>
+
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a4.png?raw=true">
 </p>
 
 ENDPOINT e-> /jugadores
@@ -414,6 +424,11 @@ Controlador:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/30.png?raw=true">
 </p>
 
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a5.png?raw=true">
+</p>
+
 ENDPOINT f-> /jugadores/{nombre}
 
 Controlador:
@@ -421,11 +436,21 @@ Controlador:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/31.png?raw=true">
 </p>
 
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a6.png?raw=true">
+</p>
+
 ENDPOINT g-> /jugador/fisico/{nombre}
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/32.png?raw=true">
+</p>
+
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a7.png?raw=true">
 </p>
 
 ENDPOINT h-> estadisticas/jugador/{nombre}
@@ -437,6 +462,11 @@ Controlador:
 Repositorio:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/41.png?raw=true">
+</p>
+
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a8.png?raw=true">
 </p>
 
 ENDPOINT i-> estadisticas/jugador/{nombre}/avg
@@ -454,6 +484,11 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/44.png?raw=true">
 </p>
 
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a9.png?raw=true">
+</p>
+
 ENDPOINT j-> partidos/resultados/local/{nombre}
 
 Controlador:
@@ -464,6 +499,11 @@ Controlador:
 Repositorio:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/51.png?raw=true">
+</p>
+
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a10.png?raw=true">
 </p>
 
 ENDPOINT k-> partidos/resultados/visitante/{nombre}
@@ -478,6 +518,11 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/53.png?raw=true">
 </p>
 
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a11.png?raw=true">
+</p>
+
 ENDPOINT l-> partidos/resultados/media/local/{nombre}
 
 Controlador:
@@ -490,6 +535,11 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/55.png?raw=true">
 </p>
 
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a12.png?raw=true">
+</p>
+
 ENDPOINT m-> partidos/resultados/media/visitante/{nombre}
 
 Controlador:
@@ -500,6 +550,11 @@ Controlador:
 Repositorio:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/57.png?raw=true">
+</p>
+
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a13.png?raw=true">
 </p>
 
 ## Authors
