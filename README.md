@@ -371,47 +371,64 @@ partidos_media_visitante:
 
 ENDPOINT a-> /equipos
 
+Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/20.png?raw=true">
 </p>
 
 ENDPOINT b-> /equipos/{equipo}
 
+Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/21.png?raw=true">
 </p>
 
 ENDPOINT c->
 
+Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/22.png?raw=true">
 </p>
 
 ENDPOINT d->
 
+Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/23.png?raw=true">
 </p>
 
 ENDPOINT e->
 
+Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/30.png?raw=true">
 </p>
 
 ENDPOINT f->
 
+Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/31.png?raw=true">
 </p>
 
 ENDPOINT g->
 
+Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/32.png?raw=true">
 </p>
 
 ENDPOINT h->
+
+Controlador:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/40.png?raw=true">
+</p>
+Repositorio:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/41.png?raw=true">
+</p>
+
 ENDPOINT i->
 ENDPOINT j->
 ENDPOINT k->
