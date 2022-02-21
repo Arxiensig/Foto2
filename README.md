@@ -139,7 +139,7 @@ Pondremos lo siguiente:
 	DB_PASSWORD=dbrootpass
 	DB_HOST=add-dbms
 	DB_NAME=nba
-    DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"
+    	DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"
 ```
 Deberá de quedarnos algo similar a esto:
 
@@ -158,7 +158,7 @@ Justo antes de: *DROP TABLE IF EXISTS `equipos`*
 	USE nba;
 ```
 
-Quedará de la siguiene forma:
+Quedará de la siguiente forma:
 
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/7.png?raw=true">
