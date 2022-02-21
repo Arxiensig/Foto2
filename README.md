@@ -118,13 +118,48 @@ En este caso utilizaremos una BBDD basada en la NBA. Pero podriamos utilizar cua
 
 En nuestro caso ya tendremos descargados los csv. Estos ficheros se encontrarán dentro del fichero: **add-project-files**
 
-Lo descomprimiremos y lo copiaremos en la carpeta de api-nba. Una vez copiado reenombraremos este directorio copiado como: **files**
+Lo descomprimiremos y lo copiaremos en la carpeta de api-nba. Una vez copiado reenombraremos este directorio copiado como **files**. Una vez hecho debería de quedar de la siguiente forma:
+
 
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/5.png?raw=true">
 </p>
 
 
+## Configuración de la API
+
+Ahora ya podremos comenzar a configurar los propios archivos dentro del contenedor de la api.
+
+
+Iniciaremos el *IDE* llamado **PhpStorm** y modificaremos el fichero **.env**. 
+Pondremos lo siguiente:
+```bash
+	DB_USER=root
+	DB_PASSWORD=dbrootpass
+	DB_HOST=add-dbms
+	DB_NAME=nba
+    DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"
+```
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/6.png?raw=true">
+</p>
+
+Guardaremos el fichero y pasaremos al siguiente. Ahora buscaremos dentro del directorio *files* el archivo sql llamado **nba_2022_02_02.sql**
+
+Dentro de este archivo deberemos de añadir unas lineas de código que nos permitirán crear las tablas una vez vayamos a crear toda la BBDD.
+
+Justo antes de: *DROP TABLE IF EXISTS `equipos`*
+
+```bash
+    CREATE SCHEMA if not exists nba;
+	USE nba;
+```
+
+Quedará de la siguiene forma:
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/7.png?raw=true">
+</p>
 ## Authors
 
 - Martin Gregorio Abad ( arxiensig@gmail.com)
