@@ -40,6 +40,7 @@ Lo siguiente será en el fichero **docker-compose.yml** modificar el nombre del 
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/2.png?raw=true">
 </p>
+
 ## Instalación paso a paso
 
 Ahora que ya hemos realizado las configuraciones previas podemos proceder a la instalación
