@@ -72,7 +72,7 @@ Volveremos una carpeta atras y borraremos el directorio api-nba:
     rm -r api.nba/
 ```
 Ahora deberemos configurar tu dispositivo para poder conectarnos a la API.
-## Configuración: apinba.local (hosts)
+## Configuración: apinba.local (hosts):
 
 Deberemos dirigirnos al archivo *hosts* dentro del directorio que tendrás en System32 ( Windows).
 La ruta por defecto sería: **C:\Windows\System32\drivers\etc\hosts**
@@ -82,6 +82,49 @@ La ruta por defecto sería: **C:\Windows\System32\drivers\etc\hosts**
 </p>
 
 Deberemos añadir el nombre que hemos configurado en el apartado de "*env.webapp*"
+
+
+## Mostrar "apinba.local" en el navegador:
+
+Abriremos el PowerShell y entraremos en el contenedor de docker.
+Recordemos:
+
+```bash
+    docker-compose exec web bash
+```
+Una vez dentro procederemos a dar permisos totales sobre el fichero **var/cache** y **var/log**.
+```bash
+    chmod -R 777 var/cache/* var/log
+```
+De esta forma lograremos entrar en la api de symfony desde el navegador.
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/4.png?raw=true">
+</p>
+
+La ruta que deberemos escribir en el navegador para entrar será:
+
+```bash
+    apinba.local:8082
+```
+Recordar que el puerto puede ser distinto dependindo del que tengas por defecto o hayamos configurado.
+
+
+## Ficheros CSV
+
+Ahora tendremos que manipular los csv que utilizaremos para cargar toda la base de datos.
+
+En este caso utilizaremos una BBDD basada en la NBA. Pero podriamos utilizar cualquier tipo de CSV (dependiendo de la temática que deseemos utilizar).
+
+En nuestro caso ya tendremos descargados los csv. Estos ficheros se encontrarán dentro del fichero: **add-project-files**
+
+Lo descomprimiremos y lo copiaremos en la carpeta de api-nba. Una vez copiado reenombraremos este directorio copiado como: **files**
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/5.png?raw=true">
+</p>
+
+
 ## Authors
 
 - Martin Gregorio Abad ( arxiensig@gmail.com)
