@@ -194,9 +194,38 @@ Para volver a entrar en mySQL deberemos de ejecutar lo siguiente:
 ```
 No añadiremos las filas que hacen referencia al **sql**; ya que de hacerlo podría machacar toda la información ya creada.
 Trataremos de evitar este posible final.
+
+
+## Insertar datos en la BBDD:
+
+En esta sección trabajaremos para poder añadir todos los datos de los csv en las tablas de la BBDD.
+
+Dentro del directorio que contiene esta api (api-nba) crearemos un directorio llamado **scripts**
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/9.png?raw=true">
+</p>
+
+Dentro de este directorio crearemos un fichero **py** llamado *cargarEquipos.py*. Este fichero será el encargado de conectarnos con la BBDD y a la vez cargar los datos utilizando el csv correspondiente.
+
+Este archivo se dividirá en dos partes.
+Por un lado deberemos de conectarnos a la BBDD:
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/10.png?raw=true">
+</p>
+
+Recordar que deberemos de configurar correctamente el apartado de usuario, password, host y database.
+Por otro lado estará la sección donde leeremos el csv y modificaremos la tabla.
+Tened cuidado con el Query y la posición de los values.
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/11.png?raw=true">
+</p>
 ## Authors
 
-- Martin Gregorio Abad ( arxiensig@gmail.com)
+- Martin Gregorio Abad
+- [@arxiensig](https://github.com/Arxiensig)
 
 
 ## Usage/Examples
