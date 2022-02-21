@@ -297,7 +297,7 @@ Una vez todo este configurado pasaremos a gestionar los **ENDPOINTS**.
 
 
 
-## EndPoints
+##  Creando Endpoints
 
 Ahora comenzaremos a crear los primeros endpoints. 
 
@@ -347,7 +347,7 @@ estadisticas_jugador:
   path: estadisticas/jugador/{nombre}
   controller: App\Controller\EstadisticasController::getStatsByPlayer
 
-estadisticas_jugadora:
+estadisticas_jugador_media:
   path: estadisticas/jugador/{nombre}/avg
   controller: App\Controller\EstadisticasController::getStatsByPlayerMedia
 
@@ -383,42 +383,42 @@ Controlador:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/21.png?raw=true">
 </p>
 
-ENDPOINT c->
+ENDPOINT c-> /equipo/jugadores
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/22.png?raw=true">
 </p>
 
-ENDPOINT d->
+ENDPOINT d-> /equipo/jugadores/{nombre}
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/23.png?raw=true">
 </p>
 
-ENDPOINT e->
+ENDPOINT e-> /jugadores
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/30.png?raw=true">
 </p>
 
-ENDPOINT f->
+ENDPOINT f-> /jugadores/{nombre}
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/31.png?raw=true">
 </p>
 
-ENDPOINT g->
+ENDPOINT g-> /jugador/fisico/{nombre}
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/32.png?raw=true">
 </p>
 
-ENDPOINT h->
+ENDPOINT h-> estadisticas/jugador/{nombre}
 
 Controlador:
 <p align="center">
@@ -429,7 +429,7 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/41.png?raw=true">
 </p>
 
-ENDPOINT i->
+ENDPOINT i-> estadisticas/jugador/{nombre}/avg
 
 Controlador:
 <p align="center">
@@ -444,7 +444,7 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/44.png?raw=true">
 </p>
 
-ENDPOINT j->
+ENDPOINT j-> partidos/resultados/local/{nombre}
 
 Controlador:
 <p align="center">
@@ -456,7 +456,7 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/51.png?raw=true">
 </p>
 
-ENDPOINT k->
+ENDPOINT k-> partidos/resultados/visitante/{nombre}
 
 Controlador:
 <p align="center">
@@ -468,7 +468,7 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/53.png?raw=true">
 </p>
 
-ENDPOINT l->
+ENDPOINT l-> partidos/resultados/media/local/{nombre}
 
 Controlador:
 <p align="center">
@@ -480,7 +480,7 @@ Repositorio:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/55.png?raw=true">
 </p>
 
-ENDPOINT m->
+ENDPOINT m-> partidos/resultados/media/visitante/{nombre}
 
 Controlador:
 <p align="center">
@@ -491,9 +491,6 @@ Repositorio:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/57.png?raw=true">
 </p>
-
-
-
 
 ## Authors
 
