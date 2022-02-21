@@ -430,10 +430,68 @@ Repositorio:
 </p>
 
 ENDPOINT i->
+
+Controlador:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/42.png?raw=true">
+</p>
+
+Repositorio:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/43.png?raw=true">
+</p>
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/44.png?raw=true">
+</p>
+
 ENDPOINT j->
+
+Controlador:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/50.png?raw=true">
+</p>
+
+Repositorio:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/51.png?raw=true">
+</p>
+
 ENDPOINT k->
+
+Controlador:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/52.png?raw=true">
+</p>
+
+Repositorio:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/53.png?raw=true">
+</p>
+
 ENDPOINT l->
+
+Controlador:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/54.png?raw=true">
+</p>
+
+Repositorio:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/55.png?raw=true">
+</p>
+
 ENDPOINT m->
+
+Controlador:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/56.png?raw=true">
+</p>
+
+Repositorio:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/57.png?raw=true">
+</p>
+
 
 
 
