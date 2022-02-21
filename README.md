@@ -245,7 +245,48 @@ Una vez ejecutado esto esperaremos a que se instale correctamente todo.
 
 
 
-## Controladores:
+## Controladores y repositorios:
+
+Tras crear los Entity deberemos proceder a crear los Controlador y los Repository de cada tabla.
+
+Debería de quedar algo similar a esto:
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/12.png?raw=true">
+</p>
+
+Ahora nos tocará realizar los "extends" de cada uno de los **repositorios**. 
+En la linea donde pone el nombre de la clase pondremos al final: **extends EntityRepository**
+
+```bash
+    namespace App\Repository;
+
+    use App\Entity\Equipos;
+    use Doctrine\ORM\EntityRepository;
+
+
+    class EquiposRepository extends EntityRepository
+```
+
+En los archivos de los **controladores** pondremos al final:
+
+```bash
+    namespace App\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+    class EquiposController extends AbstractController
+```
+
+Y finalmente en cada una de sus Entity:
+
+```bash
+    /**
+ 		* Equipos
+ 		*
+ 		* @ORM\Table(name="equipos")
+ 		* @ORM\Entity(repositoryClass="App\Repository\EquiposRepository")
+ 		*/
+```
 
 
 ## Authors
