@@ -280,28 +280,123 @@ En los archivos de los **controladores** pondremos al final:
 Y finalmente en cada una de sus Entity:
 
 ```bash
-    /**
-	* Equipos
-	*
-	* @ORM\Table(name="equipos")
-	* @ORM\Entity(repositoryClass="App\Repository\EquiposRepository")
-	*/
+/**
+* Equipos
+*
+* @ORM\Table(name="equipos")
+* @ORM\Entity(repositoryClass="App\Repository\EquiposRepository")
+*/
 ```
+
+Haremos lo mismo con todos los *controladores, repositorios y entity*.
+
+Tras realizar esto deberemos de crear los **Getter** y los **Setter** dentro de cada uno de los Entity. De lo contrario no podremos trabajar correctamente.
+
+Una vez todo este configurado pasaremos a gestionar los **ENDPOINTS**.
+
+
+
+
+## EndPoints
+
+Ahora comenzaremos a crear los primeros endpoints. 
+
+Lo primero será dirigirnos al archivo de **routes**.
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/13.png?raw=true">
+</p>
+
+Aquí deberemos configurar la ruta que escribiremos en el navegador para poder accionar la función que crearemos en el controlador.
+También le indicaremos a que controlador y que función hace objetivo cada vez que lanzamos la *url*
+
+Deberemos de tener claro que cada vez que lancemos la *url* en el navegador llamaremos a una función en el **controlador**, y este **controlador** al mismo tiempo llamará a una función en el **repositorio**.
+
+routes:
+
+```bash
+equipos_equipos:
+  path: /equipos
+  controller: App\Controller\EquiposController::getTeamInfo
+
+equipos_equipo:
+  path: /equipos/{equipo}
+  controller: App\Controller\EquiposController::getTeamInfoByName
+
+equipos_equipo_jugadores:
+  path: /equipo/jugadores
+  controller: App\Controller\EquiposController::jugadoresByEquipos
+
+equipos_equipo_nombre:
+  path: /equipo/jugadores/{nombre}
+  controller: App\Controller\EquiposController::jugadoresByEquipo
+
+jugadores_jugadores:
+  path: /jugadores
+  controller: App\Controller\JugadoresController::getPlayerInfo
+
+jugadores_nombre:
+  path: /jugadores/{nombre}
+  controller: App\Controller\JugadoresController::getPlayerInfoByName
+
+jugadores_fisico:
+  path: /jugador/fisico/{nombre}
+  controller: App\Controller\JugadoresController::getPlayerAttrByName
+
+estadisticas_jugador:
+  path: estadisticas/jugador/{nombre}
+  controller: App\Controller\EstadisticasController::getStatsByPlayer
+
+estadisticas_jugadora:
+  path: estadisticas/jugador/{nombre}/avg
+  controller: App\Controller\EstadisticasController::getStatsByPlayerMedia
+
+partidos_local:
+  path: partidos/resultados/local/{nombre}
+  controller: App\Controller\PartidosController::getLocalByName
+
+partidos_visitante:
+  path: partidos/resultados/visitante/{nombre}
+  controller: App\Controller\PartidosController::getVisitByName
+
+partidos_media_local:
+  path: partidos/resultados/media/local/{nombre}
+  controller: App\Controller\PartidosController::getMediaByLocalName
+
+partidos_media_visitante:
+  path: partidos/resultados/media/visitante/{nombre}
+  controller: App\Controller\PartidosController::getMediaByVisitanteName
+```
+
+
+ENDPOINT a-> /equipos
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/20.png?raw=true">
+</p>
+
+ENDPOINT b-> /equipos/{equipo}
+
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/21.png?raw=true">
+</p>
+
+ENDPOINT c->
+ENDPOINT d->
+ENDPOINT e->
+ENDPOINT f->
+ENDPOINT g->
+ENDPOINT h->
+ENDPOINT i->
+ENDPOINT j->
+ENDPOINT k->
+ENDPOINT l->
+ENDPOINT m->
+
 
 
 ## Authors
 
 - Martin Gregorio Abad
 - [@arxiensig](https://github.com/Arxiensig)
-
-
-## Usage/Examples
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
 
