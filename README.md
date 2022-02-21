@@ -216,12 +216,38 @@ Por un lado deberemos de conectarnos a la BBDD:
 </p>
 
 Recordar que deberemos de configurar correctamente el apartado de usuario, password, host y database.
+
 Por otro lado estará la sección donde leeremos el csv y modificaremos la tabla.
 Tened cuidado con el Query y la posición de los values.
 
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/11.png?raw=true">
 </p>
+
+Haremos los mismo con las demás tablas. Adecuando correctamente la información para poder cargar cada una de las tablas con su documento *csv*.
+
+
+## Cargar los Entity:
+
+Una vez hemos llegado a este punto nos tocará cargar los Entity con información de las tablas de la BBDD.
+
+Para poder crear estos entity ejecutaremos el siguiente comando en el PowerShell
+
+Recordar que deberemos ejecutarlo desde el contenedor de docker de la api-nba.
+
+```bash
+    php bin/console doctrine:mapping:convert annotation src/Entity --from-database
+```
+
+Una vez ejecutado esto esperaremos a que se instale correctamente todo.
+
+
+
+
+
+## Controladores:
+
+
 ## Authors
 
 - Martin Gregorio Abad
