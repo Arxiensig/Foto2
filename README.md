@@ -376,11 +376,21 @@ Controlador:
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/20.png?raw=true">
 </p>
 
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a1.png?raw=true">
+</p>
+
 ENDPOINT b-> /equipos/{equipo}
 
 Controlador:
 <p align="center">
 	<img src="https://github.com/Arxiensig/Foto2/blob/main/21.png?raw=true">
+</p>
+
+Resultado:
+<p align="center">
+	<img src="https://github.com/Arxiensig/Foto2/blob/main/a2.png?raw=true">
 </p>
 
 ENDPOINT c-> /equipo/jugadores
